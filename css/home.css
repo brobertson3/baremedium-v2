@@ -1,0 +1,527 @@
+body {
+    margin-top: 61px; }
+
+h1.title {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 800;
+    color: #d0000d;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 30px;
+    width: 100%;
+    z-index: 10;
+}
+
+/*.glasses-holder {*/
+/*position: relative; }*/
+
+/*.home-panel {*/
+/*position:relative;*/
+/*}*/
+
+#black-glasses, #red-glasses  {
+    width: 125px;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    /*left: 50%;*/
+    /*transform: translateX(-100%);*/
+    margin-top: 30px;
+    /*animation-duration: 3s;*/
+    /*animation-fill-mode: forwards; */
+}
+
+#black-glasses {
+    right: 0;
+}
+
+.glasses-holder {
+    width: 125px;
+    /*display: inline-block;*/
+}
+
+.baremedium-home-panel.home-panel-left .glasses-holder {
+    float: right;
+}
+
+.baremedium-home-panel {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    height: calc(100vh - 62px);
+}
+
+#home-panel-developer, #home-panel-designer {
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 62px);
+}
+
+@keyframes mask-slide-right {
+    0% {
+        clip-path: polygon(0 0, 50% 0,
+        50% 14.28%, 42% 14.28%,
+        42% 28.56%, 55% 28.56%,
+        55% 42.84%, 50% 42.84%,
+        50% 57.12%, 55% 57.12%,
+        55% 71.40%, 42% 71.40%,
+        42% 85.68%, 50% 85.68%,
+        50% 100%, 0 100%,
+        0 0)
+    }
+    30% {
+        clip-path: polygon(0 0, 100% 0,
+        100% 14.28%, 42% 14.28%,
+        42% 28.56%, 55% 28.56%,
+        55% 42.84%, 50% 42.84%,
+        50% 57.12%, 55% 57.12%,
+        55% 71.40%, 42% 71.40%,
+        42% 85.68%, 50% 85.68%,
+        50% 100%, 0 100%,
+        0 0)
+    }
+
+    55% {
+        clip-path: polygon(0 0, 100% 0,
+        100% 14.28%, 100% 14.28%,
+        100% 28.56%, 55% 28.56%,
+        55% 42.84%, 50% 42.84%,
+        50% 57.12%, 55% 57.12%,
+        55% 71.40%, 42% 71.40%,
+        42% 85.68%, 50% 85.68%,
+        50% 100%, 0 100%,
+        0 0)
+    }
+    75% {
+        clip-path: polygon(0 0, 100% 0,
+        100% 14.28%, 100% 14.28%,
+        100% 28.56%, 100% 28.56%,
+        100% 42.84%, 50% 42.84%,
+        50% 57.12%, 55% 57.12%,
+        55% 71.40%, 42% 71.40%,
+        42% 85.68%, 50% 85.68%,
+        50% 100%, 0 100%,
+        0 0)
+    }
+    80% {
+        clip-path: polygon(0 0, 100% 0,
+        100% 14.28%, 100% 14.28%,
+        100% 28.56%, 100% 28.56%,
+        100% 42.84%, 100% 42.84%,
+        100% 57.12%, 55% 57.12%,
+        55% 71.40%, 42% 71.40%,
+        42% 85.68%, 50% 85.68%,
+        50% 100%, 0 100%,
+        0 0)
+    }
+    90% {
+        clip-path: polygon(0 0, 100% 0,
+        100% 14.28%, 100% 14.28%,
+        100% 28.56%, 100% 28.56%,
+        100% 42.84%, 100% 42.84%,
+        100% 57.12%, 100% 57.12%,
+        100% 71.40%, 42% 71.40%,
+        42% 85.68%, 50% 85.68%,
+        50% 100%, 0 100%,
+        0 0)
+    }
+    95% {
+        clip-path: polygon(0 0, 100% 0,
+        100% 14.28%, 100% 14.28%,
+        100% 28.56%, 100% 28.56%,
+        100% 42.84%, 100% 42.84%,
+        100% 57.12%, 100% 57.12%,
+        100% 71.40%, 100% 71.40%,
+        100% 85.68%, 50% 85.68%,
+        50% 100%, 0 100%,
+        0 0)
+    }
+    100% {
+        clip-path: polygon(0 0, 100% 0,
+        100% 14.28%, 100% 14.28%,
+        100% 28.56%, 100% 28.56%,
+        100% 42.84%, 100% 42.84%,
+        100% 57.12%, 100% 57.12%,
+        100% 71.40%, 100% 71.40%,
+        100% 85.68%, 100% 85.68%,
+        100% 100%, 0 100%,
+        0 0)
+    }
+}
+
+#home-panel-designer {
+    background: url("../images/black-white-laptop-desk-hero.jpg") no-repeat;
+    -webkit-transition: background-image 0.5s ease-in-out;
+    transition: background-image 0.5s ease-in-out;
+    background-position: 60% 65%;
+    /*-webkit-background-size: cover;*/
+    /*background-size: cover;*/
+    z-index: 9;
+    /*transition: all 14s ease;*/
+    clip-path: polygon(0 0, 50% 0,
+    50% 14.28%, 42% 14.28%,
+    42% 28.56%, 55% 28.56%,
+    55% 42.84%, 50% 42.84%,
+    50% 57.12%, 55% 57.12%,
+    55% 71.40%, 42% 71.40%,
+    42% 85.68%, 50% 85.68%,
+    50% 100%, 0 100%,
+    0 0);
+}
+
+.animate-home-panel-designer {
+    animation-name: mask-slide-right;
+    animation-duration:0.7s;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+    -o-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    /*clip-path: polygon(0 0, 100% 0,*/
+    /*100% 14.28%, 42% 14.28%,*/
+    /*42% 28.56%, 55% 28.56%,*/
+    /*55% 42.84%, 50% 42.84%,*/
+    /*50% 57.12%, 55% 57.12%,*/
+    /*55% 71.40%, 42% 71.40%,*/
+    /*42% 85.68%, 50% 85.68%,*/
+    /*50% 100%, 0 100%,*/
+    /*0 0)!important;*/
+}
+
+#home-panel-developer {
+    background: #000;
+    -webkit-background-size: cover;
+    background-size: cover;
+    z-index: 3;
+}
+
+#home-panel-developer p { margin-bottom: 0; }
+#home-panel-developer p:first-child { font-size: 1.2rem; }
+#home-panel-developer p:nth-of-type(2) {
+    color: #d0000d;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-animation-name: show-element;
+    -moz-animation-name: show-element;
+    -o-animation-name: show-element;
+    animation-name: show-element;
+    animation-duration: 1s;
+    animation-delay: 2.7s;
+    -moz-animation-delay: 2.7s;
+    -o-animation-delay: 2.7s;
+    -webkit-animation-delay: 2.7s;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+    -o-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.baremedium-home-panel .button {
+    position: absolute;
+    top: 0;  bottom: 0;
+    margin: auto;
+    height: 100px;
+    width: 350px;
+    line-height: 1.7;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.baremedium-home-panel .button.button-designer { background-color: #d0000d; color: #fff; left: 100px; }
+
+.baremedium-home-panel .button.button-developer {
+    right: 100px;
+    z-index: 20;
+    height: 200px;
+    -webkit-transition: color 0.5s ease-in-out;
+    transition: color 0.5s ease-in-out;
+}
+
+.baremedium-home-panel .button.button-developer:hover { background-color: transparent; color: #d0000d!important; }
+
+@keyframes type-letter {
+    0% { visibility: hidden; }
+    100% { visibility: visible; }
+}
+
+@keyframes hide-element {
+    0% { visibility: visible; }
+    100% { visibility: hidden; }
+}
+
+@keyframes show-element {
+    0% { visibility: hidden; opacity: 0; }
+    100% { visibility: visible; opacity: 1; }
+}
+
+.baremedium-home-panel .button.button-developer span {
+    visibility: hidden;
+    -webkit-animation-name: type-letter;
+    -moz-animation-name: type-letter;
+    -o-animation-name: type-letter;
+    animation-name: type-letter;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+    -o-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.baremedium-home-panel .button.button-developer span:after {
+    visibility: hidden;
+    -webkit-animation-name: hide-element;
+    -moz-animation-name: hide-element;
+    -o-animation-name: hide-element;
+    animation-name: hide-element;
+    animation-duration: 1ms;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+    -o-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.baremedium-home-panel .button.button-developer span#first-letter {
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    -o-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+.baremedium-home-panel .button.button-developer span#first-letter:after {
+    animation:hide-element 1ms linear 1.1s, show-element 1ms linear 1s;
+}
+
+.baremedium-home-panel .button.button-developer span#second-letter {
+    -webkit-animation-delay: 1.1s;
+    -moz-animation-delay: 1.1s;
+    -o-animation-delay: 1.1s;
+    animation-delay: 1.1s;
+}
+
+.baremedium-home-panel .button.button-developer span#second-letter:after {
+    animation: hide-element 1ms linear 1.2s, show-element 1ms linear 1.1s;
+}
+
+.baremedium-home-panel .button.button-developer span#third-letter {
+    -webkit-animation-delay: 1.2s;
+    -moz-animation-delay: 1.2s;
+    -o-animation-delay: 1.2s;
+    animation-delay: 1.2s;
+}
+
+.baremedium-home-panel .button.button-developer span#third-letter:after {
+    animation: hide-element 1ms linear 1.4s, show-element 1ms linear 1.2s;
+}
+
+.baremedium-home-panel .button.button-developer span#fourth-letter {
+    -webkit-animation-delay: 1.4s;
+    -moz-animation-delay: 1.4s;
+    -o-animation-delay: 1.4s;
+    animation-delay: 1.4s;
+}
+
+.baremedium-home-panel .button.button-developer span#fourth-letter:after {
+    animation: hide-element 1ms linear 1.7s, show-element 1ms linear 1.4s;
+}
+
+.baremedium-home-panel .button.button-developer span#fifth-letter {
+    -webkit-animation-delay: 1.7s;
+    -moz-animation-delay: 1.7s;
+    -o-animation-delay: 1.7s;
+    animation-delay: 1.7s;
+}
+
+.baremedium-home-panel .button.button-developer span#fifth-letter:after {
+    animation: hide-element 1ms linear 1.9s, show-element 1ms linear 1.7s;
+}
+
+.baremedium-home-panel .button.button-developer span#sixth-letter {
+    -webkit-animation-delay: 1.9s;
+    -moz-animation-delay: 1.9s;
+    -o-animation-delay: 1.9s;
+    animation-delay: 1.9s;
+}
+
+.baremedium-home-panel .button.button-developer span#sixth-letter:after {
+    animation: hide-element 1ms linear 2.1s, show-element 1ms linear 1.9s;
+}
+
+.baremedium-home-panel .button.button-developer span#seventh-letter{
+    -webkit-animation-delay: 2.1s;
+    -moz-animation-delay: 2.1s;
+    -o-animation-delay: 2.1s;
+    animation-delay: 2.1s;
+}
+.baremedium-home-panel .button.button-developer span#seventh-letter:after {
+    animation: hide-element 1ms linear 2.2s, show-element 1ms linear 2.1s;
+}
+
+.baremedium-home-panel .button.button-developer span#eighth-letter {
+    -webkit-animation-delay: 2.2s;
+    -moz-animation-delay: 2.2s;
+    -o-animation-delay: 2.2s;
+    animation-delay: 2.2s;
+}
+
+.baremedium-home-panel .button.button-developer span#eighth-letter:after {
+    animation: hide-element 1ms linear 2.3s, show-element 1ms linear 2.2s;
+}
+
+.baremedium-home-panel .button.button-developer span#ninth-letter {
+    -webkit-animation-delay: 2.3s;
+    -moz-animation-delay: 2.3s;
+    -o-animation-delay: 2.3s;
+    animation-delay: 2.3s;
+}
+
+.baremedium-home-panel .button.button-developer span#ninth-letter:after {
+    animation: show-element 1ms linear 2.3s infinite, cursor-blink 1.2s infinite;
+}
+
+/*.baremedium-home-panel .button.button-developer span#first-letter, .baremedium-home-panel .button.button-developer span#second-letter {*/
+    /*display: inline-block;*/
+/*}*/
+
+
+.baremedium-home-panel .button.button-developer span:after {
+    content: '|';
+    position: absolute;
+    /*top: 15px;*/
+    /*animation: cursor-blink 1.2s infinite;*/
+    /*animation-name: cursor-blink;*/
+    /*animation-duration:1s;*/
+    /*-moz-animation-iteration-count: infinite;*/
+    /*-webkit-animation-timing-function: linear;*/
+    /*-moz-animation-timing-function: linear;*/
+    /*-o-animation-timing-function: linear;*/
+    /*animation-timing-function: linear;*/
+    /*-webkit-animation-fill-mode: forwards;*/
+    /*-moz-animation-fill-mode: forwards;*/
+    /*-o-animation-fill-mode: forwards;*/
+    /*animation-fill-mode: forwards;*/
+}
+
+@keyframes cursor-blink {
+    from { opacity: 1; }
+    to { opacity: 0;}
+}
+
+/*.button-inverse {*/
+    /*background-color: #fff;*/
+    /*color: #000!important;*/
+/*}*/
+
+.button-inverse {
+    background-color: transparent;
+    color: #fff;
+}
+
+.site-inner {
+    max-width: 100%;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+@keyframes blackGlassesSlideLeft {
+    100% {
+        left: calc(150px / 2); } }
+
+@keyframes redGlassesSlideRight {
+    100% {
+        left: calc(100% - 75px); } }
+
+#black-glasses {
+    /*animation-name: blackGlassesSlideLeft; */
+}
+
+#red-glasses {
+    /*animation-name: redGlassesSlideRight; */
+}
+
+.home-letters {
+    width: 80px;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.glasses-holder {
+    padding-top: 80px
+}
+
+.baremedium-home-panel.home-panel-right {
+    background-color: #000;
+}
+
+.genesis-nav-menu .current-menu-item > a, .genesis-nav-menu .v .current-menu-item > a:hover {
+    border-bottom: solid 1px #000!important;
+}
+
+.genesis-nav-menu a:hover, .genesis-nav-menu .current-menu-item > a, .genesis-nav-menu .v .current-menu-item > a:hover {
+    background-color: #fff;
+}
+
+.genesis-nav-menu a:hover {
+    background-color: transparent;
+    color: #d0000d;
+}
+
+@media only screen and (max-width: 1180px) {
+    .site-inner { max-width: 100%; padding-top: 0; }
+}
+
+@media only screen and (max-width: 1023px) {
+    body { margin-top: 100px; }
+    .site-inner { max-width: 100%; padding-top: 0; }
+    #home-panel-developer, #home-panel-designer, .baremedium-home-panel { height: calc(100vh - 100px); }
+    .baremedium-home-panel .button.button-developer { right: 75px; height: 150px; }
+    .baremedium-home-panel .button.button-designer { left: 75px; }
+    .baremedium-home-panel .button { font-size: 1.6rem; width: 221px; height: 75px; }
+    #home-panel-developer p:first-child { font-size: 1rem; }
+}
+
+@media only screen and (max-width: 800px) {
+    .site-inner { padding: 0; }
+    h1.title { font-size: 32px; margin-top: 34px; }
+}
+
+@media only screen and (max-width: 768px) {
+    #home-panel-developer, #home-panel-designer, .baremedium-home-panel { height: calc(100vh - 250px); }
+    .baremedium-home-panel .button.button-developer { height: 70px; }
+    .baremedium-home-panel .button { font-size: 1rem; height: 44px; width: 134px; padding: 10px 15px;}
+    #home-panel-developer p:first-child { font-size: 0.8rem; }
+}
+
+@media only screen and (max-width: 680px) {
+    body { margin-top: 0; }
+    /*#home-panel-developer p:first-child { font-size: 0.5rem; }*/
+    /*.baremedium-home-panel .button { font-size: 12px; height: 35px; width: 111px; padding: 10px 15px;}*/
+}
+
+@media only screen and (max-width: 600px) {
+    #black-glasses, #red-glasses { width: 100px; }
+    .glasses-holder { width: 100px; }
+    .home-letters { width: 65px; margin-left: 7px; }
+    .baremedium-home-panel .button { font-size: 0.8rem; height: 29px; width: 103px; padding: 5px 10px; line-height: 1.5;}
+    .baremedium-home-panel .button.button-developer { right: 55px; height: 56px; }
+    .baremedium-home-panel .button.button-designer { left: 55px; }
+    #home-panel-developer p:first-child { font-size: 0.6rem; }
+    /*.baremedium-home-panel { height: 515px; }*/
+}

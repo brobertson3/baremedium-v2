@@ -1,0 +1,8 @@
+<!-- Modal content-->
+<div class="">
+    <p>Technologies used: <span class="bold_tech">HTML5, CSS3, JavaScript, JavaScript UI, Bootstrap, FlexBox</span></p>
+
+    <p>This was my final project for my General Assembly course in May 2016.  The idea came about when I was talking to my wonderful girlfriend about a project idea.  She immediately stated that she would love if there was a website that would instruct people how to reduce, recycle, and reuse, in order to reduce waste and bolster the environment’s health.  So, being the Systems Engineer that she is, she laid out requirements for what she wanted the site to do.  She definitely will always be one of my favorite clients to work with.</p>
+
+    <p>The purpose of this site is to teach people how to properly reduce, recycle, and reuse their waste.  It was built primarily using Twitter Bootstrap, with the addition of FlexBox for some of the positioning.  I decided to take a less conventional approach to the navigation in the site, utilizing the JQuery UI library to achieve the drag-and-drop navigation on the main page.  I also threw in a few popover boxes for each recycling bin to let the user know what it linked to.  I decided to take the powerpoint slide approach when actually presenting the user with information.  This was achieved with Bootstrap’s carousel JS.  I also added some CSS animation to the site for kicks and giggles on the congratulations page and for the pulsing arrows on the main page.</p>
+</div>

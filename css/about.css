@@ -1,0 +1,151 @@
+div.text-wheel-container span {
+  font: 14px Monaco, MonoSpace;
+  height: 140px;
+  position: absolute;
+  top: 0;
+  transform-origin: bottom center;
+  left: calc(50% - 4px); }
+  div.text-wheel-container span a:hover {
+    cursor: pointer;
+    color: #d0000d;
+    text-decoration: none; }
+  div.text-wheel-container span a {
+    text-decoration: none;
+    color: #000000;
+    transition: color ease 0.5s; }
+  div.text-wheel-container span a, div.text-wheel-container span a:selected, div.text-wheel-container span a:visited, div.text-wheel-container span a:active, div.text-wheel-container span a:link, div.text-wheel-container span a:focus {
+    text-decoration: none; }
+  div.text-wheel-container span a.orange {
+    color: #d0000d; }
+  div.text-wheel-container span.char1 {
+    transform: rotate(-102deg); }
+  div.text-wheel-container span.char2 {
+    transform: rotate(-96deg); }
+  div.text-wheel-container span.char3 {
+    transform: rotate(-90deg); }
+  div.text-wheel-container span.char4 {
+    transform: rotate(-84deg); }
+  div.text-wheel-container span.char5 {
+    transform: rotate(-78deg); }
+  div.text-wheel-container span.char6 {
+    transform: rotate(-72deg); }
+  div.text-wheel-container span.char7 {
+    transform: rotate(-66deg); }
+  div.text-wheel-container span.char8 {
+    transform: rotate(-60deg); }
+  div.text-wheel-container span.char9 {
+    transform: rotate(-54deg); }
+  div.text-wheel-container span.char10 {
+    transform: rotate(-42deg); }
+  div.text-wheel-container span.char11 {
+    transform: rotate(-36deg); }
+  div.text-wheel-container span.char12 {
+    transform: rotate(-30deg); }
+  div.text-wheel-container span.char13 {
+    transform: rotate(-24deg); }
+  div.text-wheel-container span.char14 {
+    transform: rotate(-18deg); }
+  div.text-wheel-container span.char15 {
+    transform: rotate(-12deg); }
+  div.text-wheel-container span.char16 {
+    transform: rotate(-6deg); }
+  div.text-wheel-container span.char17 {
+    transform: rotate(0deg); }
+  div.text-wheel-container span.char18 {
+    transform: rotate(6deg); }
+  div.text-wheel-container span.char19 {
+    transform: rotate(12deg); }
+  div.text-wheel-container span.char20 {
+    transform: rotate(18deg); }
+  div.text-wheel-container span.char21 {
+    transform: rotate(24deg); }
+  div.text-wheel-container span.char22 {
+    transform: rotate(30deg); }
+  div.text-wheel-container span.char23 {
+    transform: rotate(42deg); }
+  div.text-wheel-container span.char24 {
+    transform: rotate(48deg); }
+  div.text-wheel-container span.char25 {
+    transform: rotate(54deg); }
+  div.text-wheel-container span.char26 {
+    transform: rotate(60deg); }
+  div.text-wheel-container span.char27 {
+    transform: rotate(66deg); }
+  div.text-wheel-container span.char28 {
+    transform: rotate(72deg); }
+  div.text-wheel-container span.char29 {
+    transform: rotate(78deg); }
+  div.text-wheel-container span.char30 {
+    transform: rotate(84deg); }
+  div.text-wheel-container span.char31 {
+    transform: rotate(90deg); }
+  div.text-wheel-container span.char32 {
+    transform: rotate(96deg); }
+  div.text-wheel-container span.char33 {
+    transform: rotate(102deg); }
+  div.text-wheel-container span.char34 {
+    transform: rotate(108deg); }
+
+div.text-wheel-container {
+  position: relative;
+  height: 330px;
+}
+  div.text-wheel-container img {
+    position: absolute;
+    top: 26px;
+    transform-origin: bottom center;
+    left: calc(50% + 1px);
+    transform: translateX(-50%);
+    border-radius: 50%; }
+
+div#about-me-container {
+  margin: 0 auto;
+  text-align: center;
+  width: 75%;
+  max-width: 900px;
+}
+
+.title-wheel-background {
+  background-color: red;
+  width: 100%;
+}
+
+h1.entry-content {
+  text-align: center;
+  margin: 35px auto;
+}
+
+ul.baremedium-skills-html li {
+  list-style-type: none;
+}
+
+ul.baremedium-skills-html {
+  margin-bottom: 30px;
+}
+
+@media only screen and (min-width: 600px) {
+
+}
+
+@media only screen and (min-width: 768px) {
+  div.text-wheel-container {
+    width: 50%;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  div#about-me-container {
+    width: 49%;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 20px;
+  }
+  div#about-me-container p {
+    text-align: left;
+  }
+  div.about-me-section-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+}
