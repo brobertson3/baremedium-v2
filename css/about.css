@@ -96,7 +96,11 @@ div.text-wheel-container span {
 
 div.text-wheel-container {
   position: relative;
-  height: 330px;
+  height: 240px;
+  
+}
+div.text-wheel-container span {
+  display: none;
 }
   div.text-wheel-container img {
     position: absolute;
@@ -104,13 +108,23 @@ div.text-wheel-container {
     transform-origin: bottom center;
     left: calc(50% + 1px);
     transform: translateX(-50%);
-    border-radius: 50%; }
+    border-radius: 50%;
+    height: 175px;
+  }
 
 div#about-me-container {
   margin: 0 auto;
   text-align: center;
   width: 75%;
   max-width: 900px;
+}
+
+div#about-me-container p {
+  margin-bottom: 35px;
+}
+
+div#about-me-container .hidden-section {
+  display: block;
 }
 
 .title-wheel-background {
@@ -120,7 +134,7 @@ div#about-me-container {
 
 h1.entry-content {
   text-align: center;
-  margin: 35px auto;
+  margin: 35px auto 15px;
 }
 
 ul.baremedium-skills-html li {
@@ -140,6 +154,10 @@ ul.baremedium-skills-html {
     width: 50%;
     display: inline-block;
     vertical-align: middle;
+    height: 330px;
+  }
+  div.text-wheel-container span {
+    display: block;
   }
   div#about-me-container {
     width: 49%;
@@ -149,11 +167,21 @@ ul.baremedium-skills-html {
   }
   div#about-me-container p {
     text-align: left;
+    margin-bottom: 24px;
+  }
+  div#about-me-container .hidden-section {
+    display: none;
   }
   div.about-me-section-container {
     max-width: 1000px;
     margin: 0 auto;
     padding: 0 20px;
+  }
+  div.text-wheel-container img {
+    height: 224px;
+  }
+  h1.entry-content {
+    margin: 35px auto 45px;
   }
 
 }

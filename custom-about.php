@@ -23,17 +23,17 @@ get_header();
 <div class="about-me-section-container">
     <div class="text-wheel-container">
         <img src="<?php echo get_stylesheet_directory_uri() . '/images/ProfessionalProfileImage.jpg'; ?>" height="200">
-        <div class="title-wheel-background">
-            <span class="char1 bio"><a class="active" href="#">W</a></span>
-            <span class="char2 bio"><a class="active" href="#">h</a></span>
-            <span class="char3 bio"><a class="active" href="#">o</a></span>
-            <span class="char4">&nbsp;</span>
-            <span class="char5 bio"><a class="active" href="#">I</a></span>
-            <span class="char6">&nbsp;</span>
-            <span class="char7 bio"><a class="active" href="#">A</a></span>
-            <span class="char8 bio"><a class="active" href="#">m</a></span>
-            <span class="char9">&nbsp;</span>
-        </div>
+
+        <span class="char1 bio"><a class="active" href="#">W</a></span>
+        <span class="char2 bio"><a class="active" href="#">h</a></span>
+        <span class="char3 bio"><a class="active" href="#">o</a></span>
+        <span class="char4">&nbsp;</span>
+        <span class="char5 bio"><a class="active" href="#">I</a></span>
+        <span class="char6">&nbsp;</span>
+        <span class="char7 bio"><a class="active" href="#">A</a></span>
+        <span class="char8 bio"><a class="active" href="#">m</a></span>
+        <span class="char9">&nbsp;</span>
+
 
         <span class="char10">&nbsp;</span>
         <span class="char11">&nbsp;</span>
@@ -69,6 +69,18 @@ get_header();
             two of which have been dedicated to Front End Web Development. I currently work full-time as a PHP Wordpress Developer, but am always accepting
             freelance projects on the side. If you want to work together then <a href="../contact">send me a message</a>.
         </p>
+        <div class="hidden-section">
+            <h4>What I Like</h4>
+            <p>I'm interested in anything related to the arts. That includes drawing, design, writing, coding (yes coding is an art),
+                or anything else that involves working with my hands. You can check out some of my artwork <a href="https://www.instagram.com/bare.line/">here</a>.
+                I'm also really into anime, video games, and working out. I also like to travel - Japan and Europe are the next on the list.
+            </p>
+            <h4>What I Do</h4>
+            <p>React.js  &middot;  Wordpress  &middot;  Squarespace  &middot;  PHP  &middot;  HTML5  &middot;  CSS3  &middot;  JavaScript  &middot;  Gulp ' +
+                ' &middot;  Abobe Illustrator  &middot;  Photoshop  &middot;  Illustration  &middot;  Wireframing
+            </p>
+        </div>
+
     </div>
 </div>
 
