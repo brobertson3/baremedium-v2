@@ -24,14 +24,14 @@ get_header();
     <div class="text-wheel-container">
         <img src="<?php echo get_stylesheet_directory_uri() . '/images/ProfessionalProfileImage.jpg'; ?>" height="200">
         <div class="title-wheel-background">
-            <span class="char1 bio"><a href="#">W</a></span>
-            <span class="char2 bio"><a href="#">h</a></span>
-            <span class="char3 bio"><a href="#">o</a></span>
+            <span class="char1 bio"><a class="active" href="#">W</a></span>
+            <span class="char2 bio"><a class="active" href="#">h</a></span>
+            <span class="char3 bio"><a class="active" href="#">o</a></span>
             <span class="char4">&nbsp;</span>
-            <span class="char5 bio"><a href="#">I</a></span>
+            <span class="char5 bio"><a class="active" href="#">I</a></span>
             <span class="char6">&nbsp;</span>
-            <span class="char7 bio"><a href="#">A</a></span>
-            <span class="char8 bio"><a href="#">m</a></span>
+            <span class="char7 bio"><a class="active" href="#">A</a></span>
+            <span class="char8 bio"><a class="active" href="#">m</a></span>
             <span class="char9">&nbsp;</span>
         </div>
 
