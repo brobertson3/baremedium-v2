@@ -15,8 +15,11 @@ div.text-wheel-container span {
     transition: color ease 0.5s; }
   div.text-wheel-container span a, div.text-wheel-container span a:selected, div.text-wheel-container span a:visited, div.text-wheel-container span a:active, div.text-wheel-container span a:link, div.text-wheel-container span a:focus {
     text-decoration: none; }
-  div.text-wheel-container span a.orange {
+  div.text-wheel-container span a.active {
     color: #d0000d; }
+  div.text-wheel-container span a.hovered {
+    color: #3967B1;
+  }
   div.text-wheel-container span.char1 {
     transform: rotate(-102deg); }
   div.text-wheel-container span.char2 {
@@ -85,6 +88,11 @@ div.text-wheel-container span {
     transform: rotate(102deg); }
   div.text-wheel-container span.char34 {
     transform: rotate(108deg); }
+
+  div.text-wheel-container span a:focus, div.text-wheel-container span a.active {
+    text-decoration: none;
+    outline: 0;
+  }
 
 div.text-wheel-container {
   position: relative;

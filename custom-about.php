@@ -62,6 +62,7 @@ get_header();
         <span class="char34 skills"><a href="#">o</a></span>
     </div>
     <div id="about-me-container">
+        <h4>Who I Am</h4>
         <p>Hmmm…where to start? I’m a freelance web developer and designer from Baltimore, Maryland - but I currently reside in Brea,
             CA. I’ve always had ambitions to create, probably because I have two insanely talented, creative, and artistic parents. That passion led me to
             Front End Web Development, since it bridges the gap between my creative and technical skills. I have 6 years overall experience in development,
