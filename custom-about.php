@@ -76,8 +76,7 @@ get_header();
                 I'm also really into anime, video games, and working out. I also like to travel - Japan and Europe are the next on the list.
             </p>
             <h4>What I Do</h4>
-            <p>React.js  &middot;  Wordpress  &middot;  Squarespace  &middot;  PHP  &middot;  HTML5  &middot;  CSS3  &middot;  JavaScript  &middot;  Gulp ' +
-                ' &middot;  Abobe Illustrator  &middot;  Photoshop  &middot;  Illustration  &middot;  Wireframing
+            <p class="about-skills">React.js  &middot;  Wordpress  &middot;  Squarespace  &middot;  PHP  &middot;  HTML5  &middot;  CSS3  &middot;  JavaScript  &middot;  Gulp  &middot;  Abobe Illustrator  &middot;  Photoshop  &middot;  Illustration  &middot;  Wireframing
             </p>
         </div>
 

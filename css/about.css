@@ -121,6 +121,11 @@ div#about-me-container {
 
 div#about-me-container p {
   margin-bottom: 35px;
+  text-align: left;
+}
+
+div#about-me-container p.about-skills {
+  text-align: center;
 }
 
 div#about-me-container .hidden-section {
