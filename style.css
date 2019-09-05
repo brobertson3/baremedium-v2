@@ -255,7 +255,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: 'Spinnaker', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
 	line-height: 1.2;
 	margin: 0 0 16px;
@@ -421,7 +421,7 @@ input[type="submit"],
 	box-shadow: none;
 	color: #fff;
 	cursor: pointer;
-	font-family: 'Spinnaker', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	padding: 16px 24px;
 	text-transform: uppercase;
 	white-space: normal;
@@ -790,7 +790,7 @@ img.alignright,
 
 .breadcrumb {
 	color: #fff;
-	font-family: 'Spinnaker', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 14px;
 	margin-bottom: 20px;
 	text-transform: uppercase;
@@ -891,7 +891,7 @@ img.alignright,
 }
 
 a.more-link {
-	font-family: 'Spinnaker', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	text-transform: uppercase;
 }
 
@@ -1000,7 +1000,7 @@ img#wpstats {
 }
 
 .site-title {
-	font-family: 'Spinnaker', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 28px;
 	line-height: 1;
 	margin: 0;
@@ -1079,7 +1079,7 @@ img#wpstats {
 .genesis-nav-menu {
 	clear: both;
 	color: #fff;
-	font-family: 'Spinnaker', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 14px;
 	line-height: 1.5;
 	width: 100%;
@@ -1346,7 +1346,7 @@ img#wpstats {
 
 .home-top .wrap {
 	color: #fff;
-	font-family: 'Spinnaker', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	padding: 15% 0;
 	text-align: center;
 }
@@ -1523,7 +1523,7 @@ img#wpstats {
 
 .archive-pagination {
 	clear: both;
-	font-family: 'Spinnaker', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 14px;
 	margin: 40px 0;
 	text-transform: uppercase;
@@ -1604,7 +1604,7 @@ li.comment {
 
 .comment-header {
 	color: #333;
-	font-family: 'Spinnaker', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .comment .avatar {
@@ -1620,7 +1620,7 @@ li.comment {
 }
 
 .comment-reply-link {
-	font-family: 'Spinnaker', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	text-transform: uppercase;
 }
 
@@ -1716,7 +1716,7 @@ li.comment {
 .site-footer {
 	background-color: #000;/*#f5f5f5;*/
 	color: #fff;/*#999;*/
-	font-family: 'Spinnaker', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 10px;
 	letter-spacing: 2px;
 	padding: 40px 0;
@@ -1969,6 +1969,10 @@ body.agency-pro-red {
 
 .genesis-nav-menu .current-menu-item {
 	margin-bottom: -1px;
+}
+
+div.title-area .site-title {
+	font-weight: 600;
 }
 
 /* Media Queries

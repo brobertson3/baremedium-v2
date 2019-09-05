@@ -41,6 +41,11 @@ add_theme_support( 'html5', array( 'search-form', 'comment-form', 'comment-list'
 add_theme_support( 'genesis-responsive-viewport' );
 
 // Enqueue Scripts.
+add_action( 'wp_enqueue_scripts', 'custom_add_google_fonts' );
+function custom_add_google_fonts() {
+    wp_enqueue_style( 'custom-google-fonts', 'https://fonts.googleapis.com/css?family=Montserrat:300,400,600&display=swap', false );
+}
+
 add_action( 'wp_enqueue_scripts', 'agency_load_scripts' );
 function agency_load_scripts() {
 
