@@ -471,7 +471,7 @@ h1.title {
 }
 
 .genesis-nav-menu .current-menu-item > a, .genesis-nav-menu .v .current-menu-item > a:hover {
-    border-bottom: solid 1px #000!important;
+    border-bottom: solid 1px #fff!important;
 }
 
 .genesis-nav-menu a:hover, .genesis-nav-menu .current-menu-item > a, .genesis-nav-menu .v .current-menu-item > a:hover {
