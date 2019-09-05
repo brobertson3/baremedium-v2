@@ -1975,6 +1975,16 @@ div.title-area .site-title {
 	font-weight: 300;
 }
 
+div.title-area .site-title .letter-b {
+	color: #d0000d;
+	font-weight: 400;
+}
+
+div.title-area .site-title .letter-r {
+	color: #3967B1;
+	font-weight: 400;
+}
+
 /* Media Queries
 ---------------------------------------------------------------------------------------------------- */
 
