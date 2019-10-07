@@ -19,6 +19,10 @@ input, select, textarea {
     padding: 10px;
 }
 
+input[type="submit"] {
+    padding: 12px 20px;
+}
+
 input.focused-input, textarea.focused-input {
     border-color: #3967B1;
 }
