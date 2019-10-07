@@ -7,6 +7,18 @@
     width: 100%;
 }
 
+input, textarea {
+    -webkit-transition: border-color 1s;
+    -moz-transition: border-color 1s;
+    -ms-transition: border-color 1s;
+    -o-transition: border-color 1s;
+    transition: border-color 1s;
+}
+
+input.focused-input, textarea.focused-input {
+    border-color: #3967B1;
+}
+
 @media only screen and (min-width: 1023px) {
 
     .image-panel {

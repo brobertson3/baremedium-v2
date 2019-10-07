@@ -28,8 +28,8 @@ get_header();
 <?php get_footer(); ?>
 
 <?php function baremedium_enqueue_scripts () {
-//    wp_enqueue_script('jquery');
-//    wp_enqueue_script('about_js', get_stylesheet_directory_uri() . '/js/about.js', array('jquery'));
+    wp_enqueue_script('jquery');
+    wp_enqueue_script('contact_js', get_stylesheet_directory_uri() . '/js/contact.js', array('jquery'));
 
     wp_register_style('contact_css', get_stylesheet_directory_uri(). '/css/contact.css');
 //    wp_register_style('home_css', get_stylesheet_directory_uri(). '/css/home.css');
