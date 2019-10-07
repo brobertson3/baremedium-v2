@@ -1985,6 +1985,10 @@ div.title-area .site-title .letter-r {
 	font-weight: 400;
 }
 
+article.entry h1.entry-title, h1.entry-content {
+	font-weight: 600;
+}
+
 /* Media Queries
 ---------------------------------------------------------------------------------------------------- */
 

@@ -1,0 +1,25 @@
+.image-panel, .contact-form-panel {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.image-panel, .contact-form-panel {
+    width: 100%;
+}
+
+@media only screen and (min-width: 1023px) {
+
+    .image-panel {
+        width: 48%;
+    }
+
+    .contact-form-panel {
+        width: 50%;
+    }
+
+
+    .image-panel , .contact-form-panel {
+        padding: 10px;
+    }
+
+}
