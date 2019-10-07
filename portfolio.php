@@ -13,6 +13,8 @@
  */
 
 get_header();
+
+genesis();
     ?>
 
 <!--    <div id="home-middle" class="home-middle widget-area"><div class="wrap"><section id="featured-post-2" class="widget featured-content featuredpost"><div class="widget-wrap"><h4 class="widget-title widgettitle">Our Work</h4>-->
