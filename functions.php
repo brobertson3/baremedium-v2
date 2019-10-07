@@ -80,7 +80,7 @@ add_filter('genesis_seo_title', 'baremedium_site_title' );
 // Add additional custom style to site header
 function baremedium_site_title( $title ) {
     // Change $custom_title text as you wish
-    $custom_title = '<span class="letter-b">B</span>a<span class="letter-r">r</span>e Medium';
+    $custom_title = '<img class="site-header-logo-section" src=' . get_stylesheet_directory_uri() . '/images/BareMediumLogoWeb.svg><span class="site-header-title-section"><span class="letter-b">B</span>a<span class="letter-r">r</span>e Medium</span>';
     // Don't change the rest of this on down
     // If we're on the front page or home page, use `h1` heading, otherwise us a `p` tag
     $tag = ( is_home() || is_front_page() ) ? 'h1' : 'p';

@@ -1985,8 +1985,24 @@ div.title-area .site-title .letter-r {
 	font-weight: 400;
 }
 
+/* Logo */
+div.title-area img {
+	border: #333 solid 1px;
+	height: 30px;
+	width: 30px;
+	margin-right: 15px;
+}
+
 article.entry h1.entry-title, h1.entry-content {
 	font-weight: 600;
+}
+
+.title-area .site-title .site-header-title-section {
+	display: block;
+}
+
+.title-area .site-title .site-header-logo-section {
+	display: none;
 }
 
 /* Media Queries
@@ -2134,6 +2150,32 @@ article.entry h1.entry-title, h1.entry-content {
 		padding: 12px;
 	}
 
+	.title-area {
+		width: auto;
+		display: inline-block;
+	}
+
+	.title-area .site-title .site-header-title-section {
+		display: none;
+	}
+
+	.title-area .site-title .site-header-logo-section {
+		display: block;
+	}
+
+	ul#menu-top-navigation.menu.genesis-nav-menu.responsive-menu, nav.nav-header, div.widget-wrap, section#nav_menu-4.widget.widget_nav_menu, div.widget-area.header-widget-area {
+		display: inline-block;
+		width: auto;
+	}
+
+	.site-header.widget-area {
+		width: auto;
+	}
+
+	.genesis-nav-menu a {
+		padding: 18px 16px 20px;
+	}
+
 }
 
 @media only screen and (max-width: 800px) {
@@ -2167,6 +2209,10 @@ article.entry h1.entry-title, h1.entry-content {
 
 	.site-inner {
 		padding: 5%;
+	}
+
+	.title-area {
+		padding-left: 16px;
 	}
 
 }
@@ -2235,7 +2281,7 @@ article.entry h1.entry-title, h1.entry-content {
 		border: none;
 		display: block;
 		line-height: 1;
-		padding: 18px 20px;
+		padding: 10px 0 24px 20px;
 		text-transform: none;
 	}
 
@@ -2296,6 +2342,44 @@ article.entry h1.entry-title, h1.entry-content {
 	.genesis-nav-menu.responsive-menu li:hover {
 		background: none;
 		color: #fff;
+	}
+
+	div.widget-area.header-widget-area{
+		width: 70%;
+	}
+
+	.genesis-nav-menu.responsive-menu .menu-item, .responsive-menu-icon {
+		text-align: right;
+		display: block;
+	}
+
+	ul#menu-top-navigation.menu.genesis-nav-menu.responsive-menu, nav.nav-header, section#nav_menu-4.widget.widget_nav_menu, div.widget-wrap {
+		width: 100%;
+	}
+
+	.responsive-menu-icon:before {
+		padding: 18px 0 20px;
+		text-align: right;
+	}
+
+	.genesis-nav-menu {
+		text-align: right;
+	}
+
+	.genesis-nav-menu.responsive-menu .current-menu-item > a {
+		color: red;
+	}
+
+	.genesis-nav-menu .current-menu-item > a {
+		border-bottom: none!important;
+	}
+
+	ul#menu-top-navigation.menu.genesis-nav-menu.responsive-menu {
+		display: none;
+	}
+
+	div.title-area {
+		padding-left: 0;
 	}
 
 }

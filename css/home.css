@@ -511,6 +511,9 @@ h1.title {
 
 @media only screen and (max-width: 680px) {
     body { margin-top: 0; }
+    .genesis-nav-menu .current-menu-item > a {
+        border-bottom: none!important;
+    }
     /*#home-panel-developer p:first-child { font-size: 0.5rem; }*/
     /*.baremedium-home-panel .button { font-size: 12px; height: 35px; width: 111px; padding: 10px 15px;}*/
 }
