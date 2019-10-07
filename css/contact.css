@@ -15,6 +15,10 @@ input, textarea {
     transition: border-color 1s;
 }
 
+input, select, textarea {
+    padding: 10px;
+}
+
 input.focused-input, textarea.focused-input {
     border-color: #3967B1;
 }
