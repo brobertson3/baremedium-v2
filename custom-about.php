@@ -21,45 +21,45 @@ get_header();
 <h1 class="entry-content">About Me</h1>
 
 <div class="about-me-section-container">
-    <div class="text-wheel-container">
+    <div class="text-wheel-section">
+      <div class="text-wheel-container">
         <img src="<?php echo get_stylesheet_directory_uri() . '/images/ProfessionalProfileImage.jpg'; ?>" height="200">
 
-        <span class="char1 bio"><a class="active" href="#">W</a></span>
-        <span class="char2 bio"><a class="active" href="#">h</a></span>
-        <span class="char3 bio"><a class="active" href="#">o</a></span>
-        <span class="char4">&nbsp;</span>
-        <span class="char5 bio"><a class="active" href="#">I</a></span>
-        <span class="char6">&nbsp;</span>
-        <span class="char7 bio"><a class="active" href="#">A</a></span>
-        <span class="char8 bio"><a class="active" href="#">m</a></span>
-        <span class="char9">&nbsp;</span>
-
-
-        <span class="char10">&nbsp;</span>
-        <span class="char11">&nbsp;</span>
-        <span class="char12 hobby"><a href="#">W</a></span>
-        <span class="char13 hobby"><a href="#">h</a></span>
-        <span class="char14 hobby"><a href="#">a</a></span>
-        <span class="char15 hobby"><a href="#">t</a></span>
-        <span class="char16">&nbsp;</span>
-        <span class="char17 hobby"><a href="#">I</a></span>
-        <span class="char18">&nbsp;</span>
-        <span class="char19 hobby"><a href="#">L</a></span>
-        <span class="char20 hobby"><a href="#">i</a></span>
-        <span class="char21 hobby"><a href="#">k</a></span>
-        <span class="char22 hobby"><a href="#">e</a></span>
-        <span class="char23">&nbsp;</span>
-        <span class="char24">&nbsp;</span>
-        <span class="char25">&nbsp;</span>
-        <span class="char26 skills"><a href="#">W</a></span>
-        <span class="char27 skills"><a href="#">h</a></span>
-        <span class="char28 skills"><a href="#">a</a></span>
-        <span class="char29 skills"><a href="#">t</a></span>
-        <span class="char30">&nbsp;</span>
-        <span class="char31 skills"><a href="#">I</a></span>
-        <span class="char32">&nbsp;</span>
-        <span class="char33 skills"><a href="#">D</a></span>
-        <span class="char34 skills"><a href="#">o</a></span>
+        <ul class="remove-mobile">
+            <li class="segment1"><a href="#"></a></li>
+            <li class="segment2"><a href="#"></a></li>
+            <li class="segment3"><a href="#"></a></li>
+            <li class="active"><a href="#"></a></li>
+        </ul>
+        <span class="char1 remove-mobile">W</span>
+        <span class="char2 remove-mobile">h</span>
+        <span class="char3 remove-mobile">o</span>
+        <span class="char4 remove-mobile">&nbsp;</span>
+        <span class="char5 remove-mobile">I</span>
+        <span class="char6 remove-mobile">&nbsp;</span>
+        <span class="char7 remove-mobile">A</span>
+        <span class="char8 remove-mobile">m</span>
+        <span class="char12 remove-mobile">W</span>
+        <span class="char13 remove-mobile">h</span>
+        <span class="char14 remove-mobile">a</span>
+        <span class="char15 remove-mobile">t</span>
+        <span class="char16 remove-mobile">&nbsp;</span>
+        <span class="char17 remove-mobile">I</span>
+        <span class="char18 remove-mobile">&nbsp;</span>
+        <span class="char19 remove-mobile">L</span>
+        <span class="char20 remove-mobile">i</span>
+        <span class="char21 remove-mobile">k</span>
+        <span class="char22 remove-mobile">e</span>
+        <span class="char26 remove-mobile">W</span>
+        <span class="char27 remove-mobile">h</span>
+        <span class="char28 remove-mobile">a</span>
+        <span class="char29 remove-mobile">t</span>
+        <span class="char30 remove-mobile">&nbsp;</span>
+        <span class="char31 remove-mobile">I</span>
+        <span class="char32 remove-mobile">&nbsp;</span>
+        <span class="char33 remove-mobile">D</span>
+        <span class="char34 remove-mobile">o</span>
+      </div>
     </div>
     <div id="about-me-container">
         <h4>Who I Am</h4>

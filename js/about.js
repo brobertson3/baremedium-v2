@@ -9,63 +9,28 @@ jQuery(document).ready(function( $ ) {
     I\'m also really into anime, video games, and working out. I also like to travel - Japan and Europe are the next on the list.</p>';
     var skillsHTML = '<h4>What I Do</h4><p>React.js  &middot;  Wordpress  &middot;  Squarespace  &middot;  PHP  &middot;  HTML5  &middot;  CSS3  &middot;  JavaScript  &middot;  Gulp ' +
         ' &middot;  Abobe Illustrator  &middot;  Photoshop  &middot;  Illustration  &middot;  Wireframing</p>';
-    // var skillsHTML = '<ul class="baremedium-skills-html">' +
-    //     '               <li>Wordpress</li>' +
-    //     '               <li>Squarespace</li>' +
-    //     '               <li>PHP</li>' +
-    //     '               <li>HTML5</li>' +
-    //     '               <li>CSS3</li>' +
-    //     '               <li>JavaScript</li>' +
-    //     '               <li>Gulp</li>' +
-    //     '               <li>Abobe Illustrator</li>' +
-    //     '               <li>Photoshop</li>' +
-    //     '               <li>Illustration</li>' +
-    //     '               <li>Wireframing</li>' +
-    //     '</ul>';
 
-    $(".text-wheel-container span a").click(function () {
-        if ($(this).parent().hasClass('bio')) {
-            //Display the bio section at the bottom
+    document.querySelector(".text-wheel-container ul").addEventListener("click", function(e) {
+        e.preventDefault();
+        let wheelTarget = e.target.parentElement.className;
+        let activeElement = document.querySelector('li.active');
+        if (wheelTarget === 'segment1') {
+            activeElement.style.transform = "rotate(0deg) skew(30deg)";
+            //Display the bio section
             $('#about-me-container').html(bioHTML);
-            $(".text-wheel-container span a").removeClass('active');
-            $('span.bio a').addClass('active');
-        } else if ($(this).parent().hasClass('hobby')) {
-            // Display the hobby section at the bottom
+            // $(".text-wheel-container span a").removeClass('active');
+            // $('span.bio a').addClass('active');
+        } else if (wheelTarget === 'segment2') {
+            activeElement.style.transform = "rotate(60deg) skew(30deg)";
+            // Display the hobby section
             $('#about-me-container').html(hobbyHTML);
-            $(".text-wheel-container span a").removeClass('active');
-            $('span.hobby a').addClass('active');
-        } else {
-            //Display the skills section at the bottom
+        } else if (wheelTarget === 'segment3') {
+            activeElement.style.transform = "rotate(120deg) skew(30deg)";
+            //Display the skills section
             $('#about-me-container').html(skillsHTML);
-            $(".text-wheel-container span a").removeClass('active');
-            $('span.skills a').addClass('active');
         }
-    });
 
-    $(".text-wheel-container span.bio a").hover(function () {
-        if($(this).hasClass('active')) {
-            $('span.bio a').removeClass('hovered');
-        } else {
-            $('span.bio a').toggleClass('hovered');
-        }
     });
-
-    $(".text-wheel-container span.hobby a").hover(function () {
-        if($(this).hasClass('active')) {
-            $('span.hobby a').removeClass('hovered');
-        } else {
-            $('span.hobby a').toggleClass('hovered');
-        }
-    });
-
-    $(".text-wheel-container span.skills a").hover(function () {
-        if($(this).hasClass('active')) {
-            $('span.skills a').removeClass('hovered');
-        } else {
-            $('span.skills a').toggleClass('hovered');
-        }
-    });
-
 });
 
 

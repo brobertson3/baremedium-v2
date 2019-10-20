@@ -1,116 +1,186 @@
-div.text-wheel-container span {
-  font: 14px Monaco, MonoSpace;
-  height: 140px;
+.text-wheel-container img {
+  position: absolute;
+  z-index: 100;
+  width: 75%;
+  height: 75%;
+  top: 12.5%;
+  left: 50.5%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+}
+.text-wheel-container {
+  font-size: 1em;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  z-index: 10;
+  top: 0;
+  left: 50%;
+  border-radius: 50%;
+  /*margin-left: -13em;*/
+  transform: scale(1) translateX(-50%);
+  transition: all .3s ease;
+}
+
+.text-wheel-container li {
+  position: absolute;
+  font-size: 1.5em;
+  width: 10em;
+  height: 7.6em;
+  transform-origin: 100% 100%;
+  overflow: hidden;
+  left: 50%;
+  top: 0;
+  margin-top: -1.3em;
+  margin-left: -10em;
+  transition: border 0.3s ease;
+  border: 1px #fff solid;
+}
+
+.text-wheel-container li a {
+  display: block;
+  font-size: 1.18em;
+  height: 14.5em;
+  width: 14.5em;
+  position: absolute;
+  bottom: -7.25em;
+  right: -7.25em;
+  border-radius: 50%;
+  text-decoration: none;
+  color: #fff;
+  padding-top: 1.8em;
+  text-align: center;
+  transform: skew(-30deg) rotate(-60deg) scale(1);
+  transition: opacity 0.3s, color 0.3s;
+}
+
+.text-wheel-container li a span {
+  font-size: 1em;
+  opacity: 1;
+}
+
+.text-wheel-container li:first-child {
+  transform: rotate(0deg) skew(30deg);
+}
+
+.text-wheel-container li:nth-child(2) {
+  transform: rotate(60deg) skew(30deg);
+}
+
+.text-wheel-container li:nth-child(3) {
+  transform: rotate(120deg) skew(30deg)
+}
+
+.text-wheel-container li.active {
+  transform: rotate(0deg) skew(30deg);
+  transition: transform 0.5s;
+}
+
+.text-wheel-container li a {
+  background-color: #5b89d3;
+  transition: background-color 0.3s;
+}
+
+/* active style */
+.text-wheel-container li.active a {
+  background-color: #d0000d;
+}
+
+/* hover style */
+.text-wheel-container li:not(.active) a:hover,
+.text-wheel-container li:not(.active) a:active {
+  background-color: #3967B1;
+  opacity: 1;
+}
+.text-wheel-container li:not(.active) a:focus {
+  position: fixed; /* fix the "displacement" bug in webkit browsers when using tab key */
+}
+
+.text-wheel-container span {
+  font: 18px Monaco, MonoSpace;
+  color: #fff;
+  height: 150px;
   position: absolute;
   top: 0;
+  line-height: 41px;
   transform-origin: bottom center;
-  left: calc(50% - 4px); }
-  div.text-wheel-container span a:hover {
-    cursor: pointer;
-    color: #d0000d;
-    text-decoration: none; }
-  div.text-wheel-container span a {
-    text-decoration: none;
-    color: #000000;
-    transition: color ease 0.5s; }
-  div.text-wheel-container span a, div.text-wheel-container span a:selected, div.text-wheel-container span a:visited, div.text-wheel-container span a:active, div.text-wheel-container span a:link, div.text-wheel-container span a:focus {
-    text-decoration: none; }
-  div.text-wheel-container span a.active {
-    color: #d0000d; }
-  div.text-wheel-container span a.hovered {
-    color: #3967B1;
-  }
-  div.text-wheel-container span.char1 {
-    transform: rotate(-102deg); }
-  div.text-wheel-container span.char2 {
-    transform: rotate(-96deg); }
-  div.text-wheel-container span.char3 {
-    transform: rotate(-90deg); }
-  div.text-wheel-container span.char4 {
-    transform: rotate(-84deg); }
-  div.text-wheel-container span.char5 {
-    transform: rotate(-78deg); }
-  div.text-wheel-container span.char6 {
-    transform: rotate(-72deg); }
-  div.text-wheel-container span.char7 {
-    transform: rotate(-66deg); }
-  div.text-wheel-container span.char8 {
-    transform: rotate(-60deg); }
-  div.text-wheel-container span.char9 {
-    transform: rotate(-54deg); }
-  div.text-wheel-container span.char10 {
-    transform: rotate(-42deg); }
-  div.text-wheel-container span.char11 {
-    transform: rotate(-36deg); }
-  div.text-wheel-container span.char12 {
-    transform: rotate(-30deg); }
-  div.text-wheel-container span.char13 {
-    transform: rotate(-24deg); }
-  div.text-wheel-container span.char14 {
-    transform: rotate(-18deg); }
-  div.text-wheel-container span.char15 {
-    transform: rotate(-12deg); }
-  div.text-wheel-container span.char16 {
-    transform: rotate(-6deg); }
-  div.text-wheel-container span.char17 {
-    transform: rotate(0deg); }
-  div.text-wheel-container span.char18 {
-    transform: rotate(6deg); }
-  div.text-wheel-container span.char19 {
-    transform: rotate(12deg); }
-  div.text-wheel-container span.char20 {
-    transform: rotate(18deg); }
-  div.text-wheel-container span.char21 {
-    transform: rotate(24deg); }
-  div.text-wheel-container span.char22 {
-    transform: rotate(30deg); }
-  div.text-wheel-container span.char23 {
-    transform: rotate(42deg); }
-  div.text-wheel-container span.char24 {
-    transform: rotate(48deg); }
-  div.text-wheel-container span.char25 {
-    transform: rotate(54deg); }
-  div.text-wheel-container span.char26 {
-    transform: rotate(60deg); }
-  div.text-wheel-container span.char27 {
-    transform: rotate(66deg); }
-  div.text-wheel-container span.char28 {
-    transform: rotate(72deg); }
-  div.text-wheel-container span.char29 {
-    transform: rotate(78deg); }
-  div.text-wheel-container span.char30 {
-    transform: rotate(84deg); }
-  div.text-wheel-container span.char31 {
-    transform: rotate(90deg); }
-  div.text-wheel-container span.char32 {
-    transform: rotate(96deg); }
-  div.text-wheel-container span.char33 {
-    transform: rotate(102deg); }
-  div.text-wheel-container span.char34 {
-    transform: rotate(108deg); }
-
-  div.text-wheel-container span a:focus, div.text-wheel-container span a.active {
-    text-decoration: none;
-    outline: 0;
-  }
-
-div.text-wheel-container {
-  position: relative;
-  height: 240px;
-  
+  left: calc(50% - 4px);
+  cursor: pointer;
+  pointer-events: none
 }
-div.text-wheel-container span {
-  display: none;
-}
-  div.text-wheel-container img {
-    position: absolute;
-    top: 26px;
-    transform-origin: bottom center;
-    left: calc(50% + 1px);
-    transform: translateX(-50%);
-    border-radius: 50%;
-    height: 175px;
-  }
+
+/* First segment is (60deg - (4.8deg * 7)) / 2 = 13.2deg each side, start at 90deg - 13.2deg = 76.8deg */
+.text-wheel-container span.char1 {
+  transform: rotate(-76.8deg); }
+div.text-wheel-container span.char2 {
+  transform: rotate(-72deg); }
+div.text-wheel-container span.char3 {
+  transform: rotate(-67.2deg); }
+div.text-wheel-container span.char4 {
+  transform: rotate(-62.4deg); }
+div.text-wheel-container span.char5 {
+  transform: rotate(-57.6deg); }
+div.text-wheel-container span.char6 {
+  transform: rotate(-52.8deg); }
+div.text-wheel-container span.char7 {
+  transform: rotate(-48deg); }
+div.text-wheel-container span.char8 {
+  transform: rotate(-43.2deg); }
+/* Second segment is (60deg - (6deg * 2)) / 10 = 4.8deg already even on both sides */
+div.text-wheel-container span.char9 {
+  transform: rotate(-24deg); }
+div.text-wheel-container span.char10 {
+  transform: rotate(-42deg); }
+div.text-wheel-container span.char11 {
+  transform: rotate(-36deg); }
+div.text-wheel-container span.char12 {
+  transform: rotate(-24deg); }
+div.text-wheel-container span.char13 {
+  transform: rotate(-19.2deg); }
+div.text-wheel-container span.char14 {
+  transform: rotate(-14.4deg); }
+div.text-wheel-container span.char15 {
+  transform: rotate(-9.6deg); }
+div.text-wheel-container span.char16 {
+  transform: rotate(-4.8deg); }
+div.text-wheel-container span.char17 {
+  transform: rotate(0deg); }
+div.text-wheel-container span.char18 {
+  transform: rotate(4.8deg); }
+div.text-wheel-container span.char19 {
+  transform: rotate(9.6deg); }
+div.text-wheel-container span.char20 {
+  transform: rotate(14.4deg); }
+div.text-wheel-container span.char21 {
+  transform: rotate(19.2deg); }
+div.text-wheel-container span.char22 {
+  transform: rotate(24deg); }
+div.text-wheel-container span.char23 {
+  transform: rotate(42deg); }
+div.text-wheel-container span.char24 {
+  transform: rotate(48deg); }
+div.text-wheel-container span.char25 {
+  transform: rotate(54deg); }
+/* Third segment is (60deg - (4.8deg * 8)) / 2 = 10.8deg each side, start at 30deg + 10.8deg = 40.8deg */
+div.text-wheel-container span.char26 {
+  transform: rotate(40.8deg); }
+div.text-wheel-container span.char27 {
+  transform: rotate(45.6deg); }
+div.text-wheel-container span.char28 {
+  transform: rotate(50.4deg); }
+div.text-wheel-container span.char29 {
+  transform: rotate(55.2deg); }
+div.text-wheel-container span.char30 {
+  transform: rotate(60deg); }
+div.text-wheel-container span.char31 {
+  transform: rotate(64.8deg); }
+div.text-wheel-container span.char32 {
+  transform: rotate(69.6deg); }
+div.text-wheel-container span.char33 {
+  transform: rotate(74.4deg); }
+div.text-wheel-container span.char34 {
+  transform: rotate(79.2deg); }
 
 div#about-me-container {
   margin: 0 auto;
@@ -132,10 +202,13 @@ div#about-me-container .hidden-section {
   display: block;
 }
 
-.title-wheel-background {
-  background-color: red;
-  width: 100%;
+.remove-mobile {
+  display: none;
 }
+/*.title-wheel-background {*/
+  /*background-color: red;*/
+  /*width: 100%;*/
+/*}*/
 
 h1.entry-content {
   text-align: center;
@@ -155,13 +228,13 @@ ul.baremedium-skills-html {
 }
 
 @media only screen and (min-width: 768px) {
-  div.text-wheel-container {
+  div.text-wheel-section {
     width: 50%;
     display: inline-block;
     vertical-align: middle;
     height: 330px;
   }
-  div.text-wheel-container span {
+  div.text-wheel-section span {
     display: block;
   }
   div#about-me-container {
@@ -174,16 +247,20 @@ ul.baremedium-skills-html {
     text-align: left;
     margin-bottom: 24px;
   }
-  div#about-me-container .hidden-section {
+  div#about-me-container .hidden-section, .remove-mobile {
     display: none;
+  }
+  .remove-mobile {
+    display: block;
   }
   div.about-me-section-container {
     max-width: 1000px;
     margin: 0 auto;
     padding: 0 20px;
   }
-  div.text-wheel-container img {
+  div.text-wheel-section img {
     height: 224px;
+    width: 224px;
   }
   h1.entry-content {
     margin: 35px auto 45px;
