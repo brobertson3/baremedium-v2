@@ -62,14 +62,23 @@ get_header();
       </div>
     </div>
     <div id="about-me-container">
-        <h4>Who I Am</h4>
-        <p>Hmmm…where to start? I’m a freelance web developer and designer from Baltimore, Maryland - but I currently reside in Brea,
-            CA. I’ve always had ambitions to create, probably because I have two insanely talented, creative, and artistic parents. That passion led me to
-            Front End Web Development, since it bridges the gap between my creative and technical skills. I have 6 years overall experience in development,
-            two of which have been dedicated to Front End Web Development. I currently work full-time as a PHP Wordpress Developer, but am always accepting
-            freelance projects on the side. If you want to work together then <a href="../contact">send me a message</a>.
-        </p>
-        <div class="hidden-section">
+        <div id="desktop-section">
+            <h4>Who I Am</h4>
+            <p>Hmmm…where to start? I’m a freelance web developer and designer from Baltimore, Maryland - but I currently reside in Brea,
+                CA. I’ve always had ambitions to create, probably because I have two insanely talented, creative, and artistic parents. That passion led me to
+                Front End Web Development, since it bridges the gap between my creative and technical skills. I have 6 years overall experience in development,
+                two of which have been dedicated to Front End Web Development. I currently work full-time as a PHP Wordpress Developer, but am always accepting
+                freelance projects on the side. If you want to work together then <a href="../contact">send me a message</a>.
+            </p>
+        </div>
+        <div id="mobile-section">
+            <h4>Who I Am</h4>
+            <p>Hmmm…where to start? I’m a freelance web developer and designer from Baltimore, Maryland - but I currently reside in Brea,
+                CA. I’ve always had ambitions to create, probably because I have two insanely talented, creative, and artistic parents. That passion led me to
+                Front End Web Development, since it bridges the gap between my creative and technical skills. I have 6 years overall experience in development,
+                two of which have been dedicated to Front End Web Development. I currently work full-time as a PHP Wordpress Developer, but am always accepting
+                freelance projects on the side. If you want to work together then <a href="../contact">send me a message</a>.
+            </p>
             <h4>What I Like</h4>
             <p>I'm interested in anything related to the arts. That includes drawing, design, writing, coding (yes coding is an art),
                 or anything else that involves working with my hands. You can check out some of my artwork <a href="https://www.instagram.com/bare.line/">here</a>.

@@ -198,8 +198,12 @@ div#about-me-container p.about-skills {
   text-align: center;
 }
 
-div#about-me-container .hidden-section {
+div#about-me-container #mobile-section {
   display: block;
+}
+
+div#about-me-container #desktop-section {
+  display: none;
 }
 
 .remove-mobile {
@@ -247,10 +251,10 @@ ul.baremedium-skills-html {
     text-align: left;
     margin-bottom: 24px;
   }
-  div#about-me-container .hidden-section, .remove-mobile {
+  div#about-me-container #mobile-section {
     display: none;
   }
-  .remove-mobile {
+  .remove-mobile, div#about-me-container #desktop-section {
     display: block;
   }
   div.about-me-section-container {

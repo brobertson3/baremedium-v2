@@ -17,17 +17,17 @@ jQuery(document).ready(function( $ ) {
         if (wheelTarget === 'segment1') {
             activeElement.style.transform = "rotate(0deg) skew(30deg)";
             //Display the bio section
-            $('#about-me-container').html(bioHTML);
+            $('#about-me-container #desktop-section').html(bioHTML);
             // $(".text-wheel-container span a").removeClass('active');
             // $('span.bio a').addClass('active');
         } else if (wheelTarget === 'segment2') {
             activeElement.style.transform = "rotate(60deg) skew(30deg)";
             // Display the hobby section
-            $('#about-me-container').html(hobbyHTML);
+            $('#about-me-container #desktop-section').html(hobbyHTML);
         } else if (wheelTarget === 'segment3') {
             activeElement.style.transform = "rotate(120deg) skew(30deg)";
             //Display the skills section
-            $('#about-me-container').html(skillsHTML);
+            $('#about-me-container #desktop-section').html(skillsHTML);
         }
 
     });
